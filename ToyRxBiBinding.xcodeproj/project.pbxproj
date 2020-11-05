@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C702F8FB38375827EAA1C5A /* Pods_ToyRxBiBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1D9FCD82FC19B8F9999369 /* Pods_ToyRxBiBinding.framework */; };
 		9CB2C3652552ED1800E8A9EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2C3642552ED1800E8A9EF /* AppDelegate.swift */; };
 		9CB2C3672552ED1800E8A9EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2C3662552ED1800E8A9EF /* SceneDelegate.swift */; };
 		9CB2C3692552ED1800E8A9EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2C3682552ED1800E8A9EF /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D570E1C90D5954D1DF5742 /* Pods-ToyRxBiBinding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxBiBinding.debug.xcconfig"; path = "Target Support Files/Pods-ToyRxBiBinding/Pods-ToyRxBiBinding.debug.xcconfig"; sourceTree = "<group>"; };
+		31A4A60DCE89D9AD45396314 /* Pods-ToyRxBiBinding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxBiBinding.release.xcconfig"; path = "Target Support Files/Pods-ToyRxBiBinding/Pods-ToyRxBiBinding.release.xcconfig"; sourceTree = "<group>"; };
+		8A1D9FCD82FC19B8F9999369 /* Pods_ToyRxBiBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyRxBiBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB2C3612552ED1800E8A9EF /* ToyRxBiBinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyRxBiBinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB2C3642552ED1800E8A9EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB2C3662552ED1800E8A9EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C702F8FB38375827EAA1C5A /* Pods_ToyRxBiBinding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8034D7D52AE6461616CD3AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A1D9FCD82FC19B8F9999369 /* Pods_ToyRxBiBinding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CB2C3582552ED1800E8A9EF = {
 			isa = PBXGroup;
 			children = (
 				9CB2C3632552ED1800E8A9EF /* ToyRxBiBinding */,
 				9CB2C3622552ED1800E8A9EF /* Products */,
+				E75B5237245A66E8E8AC589B /* Pods */,
+				8034D7D52AE6461616CD3AF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = ToyRxBiBinding;
 			sourceTree = "<group>";
 		};
+		E75B5237245A66E8E8AC589B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00D570E1C90D5954D1DF5742 /* Pods-ToyRxBiBinding.debug.xcconfig */,
+				31A4A60DCE89D9AD45396314 /* Pods-ToyRxBiBinding.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CB2C3752552ED1E00E8A9EF /* Build configuration list for PBXNativeTarget "ToyRxBiBinding" */;
 			buildPhases = (
+				DD62C581ACBB9E33B3F07805 /* [CP] Check Pods Manifest.lock */,
 				9CB2C35D2552ED1800E8A9EF /* Sources */,
 				9CB2C35E2552ED1800E8A9EF /* Frameworks */,
 				9CB2C35F2552ED1800E8A9EF /* Resources */,
+				4841286A8EFA1D54FABB34BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4841286A8EFA1D54FABB34BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyRxBiBinding/Pods-ToyRxBiBinding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyRxBiBinding/Pods-ToyRxBiBinding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToyRxBiBinding/Pods-ToyRxBiBinding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD62C581ACBB9E33B3F07805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyRxBiBinding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CB2C35D2552ED1800E8A9EF /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		9CB2C3762552ED1E00E8A9EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D570E1C90D5954D1DF5742 /* Pods-ToyRxBiBinding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		9CB2C3772552ED1E00E8A9EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A4A60DCE89D9AD45396314 /* Pods-ToyRxBiBinding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
